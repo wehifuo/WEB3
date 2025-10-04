@@ -76,7 +76,7 @@
             if (userSequence[userSequence.length - 1] !== sequence[userSequence.length - 1]) {
                 document.getElementById('status').innerText = 'Ошибка. Попробуйте снова.';
                 userSequence = [];
-                setTimeout(playSequence, 1000);
+                setTimeout(playSequence, 2000);
                 return;
             }
 
