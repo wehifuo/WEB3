@@ -88,14 +88,16 @@
                 userSequence = [];
     
                 generateSequence(sequenceLength);
-                setTimeout(playSequence, 1000);
+                setTimeout(playSequence, 2000);
             }
         }
 
         
         document.getElementById('startButton').addEventListener('click', () => {
+            if (isPlaying) return;
             sequenceLength = 3;
             userSequence = [];
             generateSequence(sequenceLength);
             playSequence();
+
         });
